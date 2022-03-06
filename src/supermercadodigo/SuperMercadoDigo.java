@@ -83,25 +83,26 @@ public class SuperMercadoDigo {
                         case 1:
                         //VENTAS  
                         System.out.println("NUEVA VENTA EN MANTENIMIENTO, NO DISPONIBLE DE MOMENTO\n");//BORRAR ESTO AL METER EL CODIGO
-                         System.out.println("-------------------------------------------------------------------\n");
+                        System.out.println("-------------------------------------------------------------------\n");
                         break;
+                        
+                        
                         case 2:
-                            //INVENTARIOS
-                            /*
-                            
-                            
-                            METER LISTA DE PRODUCTOS 
-                            
-                            
-                            
-                            */
-                           System.out.println("INVENTARIO EN MANTENIMIENTO, NO DISPONIBLE DE MOMENTO\n");//BORRAR ESTO AL METER EL CODIGO
-                            System.out.println("-------------------------------------------------------------------\n");
+                             System.out.println("**Menu para ver la lista de inventarios**");
+                            System.out.println("La lista de los inventarios es la siguiente:");
+                            System.out.println("-----------------------------------------");
+                            a.LeerFichero();
+                            System.out.println("-----------------------------------------");
                         break;
+                        
+                        
                         case 3:
                         //CAMBIO DE CONTRASEÑA
-                           System.out.println("CAMBIO DE CONTRASEÑA EN MANTENIMIENTO, NO DISPONIBLE DE MOMENTO\n");//BORRAR ESTO AL METER EL CODIGO
-                            System.out.println("-------------------------------------------------------------------\n");
+                            System.out.println("**Menu para cambiar contraseña**");
+                            System.out.println("Seleccione su nueva contraseña:");
+                            System.out.println("Escriba nuevamente su contraseña nueva:\n\n");
+                            break;
+                    
                         case 4:
                             System.out.println("Saliendo del programa");
                             a.EscribirFichero("\nSalida del Administrador", "\nHora:", hora, minuto, segundo, "\nFecha:", dia, mes, anio);
@@ -152,19 +153,13 @@ public class SuperMercadoDigo {
 
                         //INVENTARIOS
                         case 2:
-                             System.out.println("INVENTARIO EN MANTENIMIENTO, NO DISPONIBLE DE MOMENTO\n");//BORRAR ESTO AL METER EL CODIGO
-                              System.out.println("-------------------------------------------------------------------\n");
-                             //INVENTARIO 
-                            
-                            /*
-                            
-                            
-                            METER LISTA DE PRODUCTOS 
-                            
-                            
-                            
-                            */
+                             System.out.println("**Menu para ver la lista de inventarios**");
+                            System.out.println("La lista de los inventarios es la siguiente:");
+                            System.out.println("-----------------------------------------");
+                            a.LeerProductos();
+                            System.out.println("-----------------------------------------");
                             break;
+                         
                         case 3:
                             System.out.println("Saliendo del programa");
                             salir = true;
@@ -214,16 +209,11 @@ public class SuperMercadoDigo {
                     switch (opc2) {
                         case 1:
                             System.out.println("LISTA DE INVENTARIOS");
-                            //INVENTARIOS 
-                            /*
-                            
-                            
-                            METER LISTA DE PRODUCTOS 
-                            
-                            
-                            
-                            */
+                             System.out.println("**Menu para ver la lista de inventarios**");
+                            System.out.println("La lista de los inventarios es la siguiente:");
+                            System.out.println("-----------------------------------------");
                             a.LeerFichero();
+                            System.out.println("-----------------------------------------");
                             break;
                         case 2:
                             System.out.println("Saliendo del programa");
