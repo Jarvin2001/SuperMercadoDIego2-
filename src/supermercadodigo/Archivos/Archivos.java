@@ -133,4 +133,12 @@ public class Archivos {
         }
         return lista;
     }
+
+    public void Leer() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void LeerInventario() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
