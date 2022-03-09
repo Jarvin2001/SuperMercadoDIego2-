@@ -11,40 +11,27 @@ package supermercadodigo.Clases;
  */
 public class Usuarios {
 
-    //Declaramos las constantes para nuestro programa:usuario y contraseña
+    //Declaramos las variables 
     //Usuario Admin
     private String Admin = new String("admin");
-    //Contraseña del Admin
+    //Contraseña 
     private String ContraseñaA = new String("admin123");
 
-    //Usuario del vendedor
+    //Usuario 
     private String Vendedor = new String("vendedor");
-    //Contraseña del vendedor
+    //Contraseña 
     private String ContraseñaV = new String("vendedor123");
 
-    //Usuario del invitado
+    //Usuario 
     private String Invitado = new String("invitado");
-    //Contraseña del invitado
+    //Contraseña 
     private String ContraseñaI = new String("invitado123");
 
     public Usuarios() {
 
     }
 
-    /*
-     
-    LLUVIAS DE IDEAS
-    
-    1. Cada usuario tendra una contraseña
-    
-    2. Tenemos que validar si el usuario ingresado es correcto
-    
-    3. Una vez el usuario este validado, ingresamos al menu
-    
-    
-    
-     */
-    //En este metodo, validaremos si el usuario y contraseña ingresado es correcto
+    //Miramos si el usuario y/o contraseña es correcto
     public boolean AccesoConcecidoAdministrador(String us, String con) {
 
         boolean paso = false;
