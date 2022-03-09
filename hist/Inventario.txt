@@ -1,11 +1,11 @@
 PRODUCTO: CANTIDAD : UNIDADES
-1- huevos   30		10		
-2- pollo     5		10
-3- aceite   60		10
-4- fósforos 100		10
-5- dulces   500		10
-6- margarina 20		10
-7- jabón    25		10
-8- carne    30		10
-9- gaseosa  180		10	
-10- desechables 50	10
+1- Coca Cola       30				
+2- Pepsi           5  	
+3- Dulces Diana    60	
+4- Limones        100	
+5- Escobas        500	
+6- Desodorante     20	
+7- Mango Verde      25	
+8- Jocotes         30	
+9- Maruchan       180		
+10- Cerveza        50

@@ -64,7 +64,8 @@ public class SuperMercadoDigo {
                 int mes = localDate.getMonthValue();
                 int anio = localDate.getYear();
 
-                a.EscribirFichero("\nAdministrador", "\nHora:", hora, minuto, segundo, "\nFecha:", dia, mes, anio);
+                a.EscribirFichero
+        ("\nAdministrador", "\nHora:", hora, minuto, segundo, "\nFecha:", dia, mes, anio);
                 boolean salir = false;
 
                 int opc;
@@ -96,16 +97,16 @@ public class SuperMercadoDigo {
                             double descuento = 0.03;
                             double totaldescuento = 0;
                             double totalfinal = 0;
-                            double total1 = 0;
-                            double total2 = 0;
-                            double total3 = 0;
-                            double total4 = 0;
-                            double total5 = 0;
-                            double total6 = 0;
-                            double total7 = 0;
-                            double total8 = 0;
-                            double total9 = 0;
-                            double total10 = 0;
+                            double subtotal1 = 0;
+                            double subtotal2= 0;
+                            double subtotal3 = 0;
+                            double subtotal4 = 0;
+                            double subtotal5 = 0;
+                            double subtotal6 = 0;
+                            double subtotal7 = 0;
+                            double subtotal8 = 0;
+                            double subtotal9 = 0;
+                            double subtotal10 = 0;
 
                             do {
 
@@ -127,127 +128,127 @@ public class SuperMercadoDigo {
 
                                 if (cod[i] == 1) {
 
-                                    int huevos = 30;
-                                    if (cantidad[i] <= huevos) {
+                                    int CocaCola = 30;
+                                    if (cantidad[i] <= CocaCola) {
 
-                                        total1 = cantidad[i] * 0.10;
-                                        System.out.println("Huevos--" + cantidad[i] + "x $0.10 = $" + total1);
+                                        subtotal1 = cantidad[i] * 0.65;
+                                        System.out.println("CocaCola--" + cantidad[i] + "x $0.65 = $" +subtotal1);
 
                                     } else {
 
-                                        System.out.println("Huevos--Disculpa las molestias,producto agotado!");
+                                        System.out.println("CocaCola--Disculpas del caso, producto sin existencias");
 
                                     }
 
                                 }
 
                                 if (cod[i] == 2) {
-                                    int Pollo = 5;
-                                    if (cantidad[i] <= Pollo) {
+                                    int Pepsi = 5;
+                                    if (cantidad[i] <= Pepsi) {
 
-                                        total2 = cantidad[i] * 5.00;
-                                        System.out.println("Pollo--" + cantidad[i] + "x $5.00 = $" + total2);
+                                        subtotal2 = cantidad[i] * 0.60;
+                                        System.out.println("Pepsi--" + cantidad[i] + "x $0.60 = $" + subtotal2);
                                     } else {
 
-                                        System.out.println("Pollo--Disculpa las molestias,producto agotado!");
+                                        System.out.println("Pepsi--Disculpas del caso, producto sin existencias");
 
                                     }
                                 }
                                 if (cod[i] == 3) {
-                                    int Aceite = 60;
-                                    if (cantidad[i] <= Aceite) {
-                                        total3 = cantidad[i] * 3.00;
+                                    int DulcesDiana = 60;
+                                    if (cantidad[i] <= DulcesDiana) {
+                                       subtotal3 = cantidad[i] * 0.30;
 
-                                        System.out.println("Aceite--" + cantidad[i] + "x $3.00 = $" + total3);
+                                        System.out.println("DulcesDiana--" + cantidad[i] + "x $0.30 = $" + subtotal3);
 
                                     } else {
 
-                                        System.out.println("Aceite--Disculpa las molestias,producto agotado!");
+                                        System.out.println("DulcesDiana--Disculpas del caso, producto sin existencias");
                                     }
                                 }
 
                                 if (cod[i] == 4) {
-                                    int Fosforos = 60;
-                                    if (cantidad[i] <= Fosforos) {
-                                        total4 = cantidad[i] * 0.50;
+                                    int Limones = 60;
+                                    if (cantidad[i] <= Limones) {
+                                       subtotal4 = cantidad[i] * 0.50;
 
-                                        System.out.println("Fosforos--" + cantidad[i] + "x $0.50 = $" + total4);
+                                        System.out.println("Limones--" + cantidad[i] + "x $0.50 = $" + subtotal4);
                                     } else {
-                                        System.out.println("Fosforos--Disculpa las molestias,producto agotado!");
+                                        System.out.println("Limones--Disculpas del caso, producto sin existencias");
 
                                     }
                                 }
                                 if (cod[i] == 5) {
-                                    int Dulces = 500;
-                                    if (cantidad[i] <= Dulces) {
-                                        total5 = cantidad[i] * 0.80;
+                                    int Escobas = 500;
+                                    if (cantidad[i] <= Escobas) {
+                                       subtotal5 = cantidad[i] * 2.00;
 
-                                        System.out.println("Dulces--" + cantidad[i] + "x $0.80 = $" + total5);
+                                        System.out.println("Escobas--" + cantidad[i] + "x $2.00 = $" + subtotal5);
 
                                     } else {
-                                        System.out.println("Dulces--Disculpa las molestias,producto agotado!");
+                                        System.out.println("Escobas--Disculpas del caso, producto sin existencias");
                                     }
                                 }
                                 if (cod[i] == 6) {
-                                    int Margarina = 20;
-                                    if (cantidad[i] <= Margarina) {
-                                        total6 = cantidad[i] * 0.30;
+                                    int Desodorante = 20;
+                                    if (cantidad[i] <= Desodorante) {
+                                       subtotal6 = cantidad[i] * 4.50;
 
-                                        System.out.println("Margarina--" + cantidad[i] + "x $0.30 = $" + total6);
+                                        System.out.println("Desodorante--" + cantidad[i] + "x $4.50 = $" + subtotal6);
 
                                     } else {
-                                        System.out.println("Margarina--Disculpa las molestias,producto agotado!");
+                                        System.out.println("Desodorante--Disculpas del caso, producto sin existencias");
                                     }
                                 }
                                 if (cod[i] == 7) {
-                                    int Jabon = 25;
-                                    if (cantidad[i] <= Jabon) {
-                                        total7 = cantidad[i] * 2.25;
+                                    int MangoVerde = 25;
+                                    if (cantidad[i] <= MangoVerde) {
+                                       subtotal7 = cantidad[i] * 0.75;
 
-                                        System.out.println("Jabon--" + cantidad[i] + "x $2.25 = $" + total7);
+                                        System.out.println("MangoVerde--" + cantidad[i] + "x $0.75 = $" + subtotal7);
 
                                     } else {
-                                        System.out.println("Jabon--Disculpa las molestias,producto agotado!");
+                                        System.out.println("MangoVerde--Disculpas del caso, producto sin existencias");
 
                                     }
                                 }
                                 if (cod[i] == 8) {
-                                    int Carne = 30;
-                                    if (cantidad[i] <= Carne) {
-                                        total8 = cantidad[i] * 2.75;
+                                    int Jocotes = 30;
+                                    if (cantidad[i] <= Jocotes) {
+                                       subtotal8 = cantidad[i] * 0.05;
 
-                                        System.out.println("Carne--" + cantidad[i] + "x $2.75 = $" + total8);
+                                        System.out.println("Jocotes--" + cantidad[i] + "x $0.05 = $" + subtotal8);
 
                                     } else {
-                                        System.out.println("Carne--Disculpa las molestias,producto agotado!");
+                                        System.out.println("Jocote--Disculpas del caso, producto sin existencias");
                                     }
                                 }
                                 if (cod[i] == 9) {
-                                    int Gaseosa = 180;
-                                    if (cantidad[i] <= Gaseosa) {
-                                        total9 = cantidad[i] * 1.80;
+                                    int Maruchan = 180;
+                                    if (cantidad[i] <= Maruchan) {
+                                        subtotal9 = cantidad[i] * 1.80;
 
-                                        System.out.println("Gaseosa--" + cantidad[i] + "x $1.80 = $" + total9);
+                                        System.out.println("Maruchan--" + cantidad[i] + "x $1.80 = $" + subtotal9);
                                     } else {
-                                        System.out.println("Gaseosa--Disculpa las molestias,producto agotado!");
+                                        System.out.println("Maruchan--Disculpas del caso, producto sin existencias");
 
                                     }
                                 }
                                 if (cod[i] == 10) {
-                                    int Desechables = 50;
-                                    if (cantidad[i] <= Desechables) {
-                                        total10 = cantidad[i] * 3.25;
+                                    int Cerveza = 50;
+                                    if (cantidad[i] <= Cerveza) {
+                                        subtotal10 = cantidad[i] * 1.00;
 
-                                        System.out.println("Desechables--" + cantidad[i] + "x $3.25 = $" + total10);
+                                        System.out.println("Cerveza--" + cantidad[i] + "x $1.00 = $" +subtotal10);
                                     } else {
-                                        System.out.println("Desechables--Disculpa las molestias,producto agotado!");
+                                        System.out.println("Cerveza--Disculpas del caso, producto sin existencias");
 
                                     }
                                 }
                             }
 
                             double totalproducto;
-                            totalproducto = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10;
+                            totalproducto = subtotal1 + subtotal2 + subtotal3 + subtotal4 + subtotal5 + subtotal6 + subtotal7 + subtotal8 + subtotal9 + subtotal10;
 
                             if (totalproducto > 20) {
                                 totalfinal = totalproducto;
@@ -259,7 +260,7 @@ public class SuperMercadoDigo {
                             }
 
                             System.out.println("------------------------------------");
-                            System.out.println("Total: $" + totalfinal);
+                            System.out.println("Total: $" + totalproducto);
                             System.out.println("Descuento del 3% $" + totaldescuento);
                             System.out.println("Total con descuento :$" + totalproducto);
                             System.out.println("------------------------------------");
@@ -279,7 +280,9 @@ public class SuperMercadoDigo {
                         //CAMBIO DE CONTRASEÑA
                             System.out.println("**Menu para cambiar contraseña**");
                             System.out.println("Seleccione su nueva contraseña:");
+                            usuario = in.next();
                             System.out.println("Escriba nuevamente su contraseña nueva:\n\n");
+                            cont = in.next();
                             break;
                     
                         case 4:
@@ -294,6 +297,18 @@ public class SuperMercadoDigo {
                 } while (opc != 4);
                 break;
 
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
             //OPCION VENDEDOR
             case 2:
                 do {
@@ -340,16 +355,16 @@ public class SuperMercadoDigo {
                             double descuento = 0.03;
                             double totaldescuento = 0;
                             double totalfinal = 0;
-                            double total1 = 0;
-                            double total2 = 0;
-                            double total3 = 0;
-                            double total4 = 0;
-                            double total5 = 0;
-                            double total6 = 0;
-                            double total7 = 0;
-                            double total8 = 0;
-                            double total9 = 0;
-                            double total10 = 0;
+                            double subtotal1 = 0;
+                            double subtotal2= 0;
+                            double subtotal3 = 0;
+                            double subtotal4 = 0;
+                            double subtotal5 = 0;
+                            double subtotal6 = 0;
+                            double subtotal7 = 0;
+                            double subtotal8 = 0;
+                            double subtotal9 = 0;
+                            double subtotal10 = 0;
 
                             do {
 
@@ -371,127 +386,127 @@ public class SuperMercadoDigo {
 
                                 if (cod[i] == 1) {
 
-                                    int huevos = 30;
-                                    if (cantidad[i] <= huevos) {
+                                    int CocaCola = 30;
+                                    if (cantidad[i] <= CocaCola) {
 
-                                        total1 = cantidad[i] * 0.10;
-                                        System.out.println("Huevos--" + cantidad[i] + "x $0.10 = $" + total1);
+                                        subtotal1 = cantidad[i] * 0.65;
+                                        System.out.println("CocaCola--" + cantidad[i] + "x $0.65 = $" +subtotal1);
 
                                     } else {
 
-                                        System.out.println("Huevos--Disculpa las molestias,producto agotado!");
+                                        System.out.println("CocaCola--Disculpas del caso, producto sin existencias");
 
                                     }
 
                                 }
 
                                 if (cod[i] == 2) {
-                                    int Pollo = 5;
-                                    if (cantidad[i] <= Pollo) {
+                                    int Pepsi = 5;
+                                    if (cantidad[i] <= Pepsi) {
 
-                                        total2 = cantidad[i] * 5.00;
-                                        System.out.println("Pollo--" + cantidad[i] + "x $5.00 = $" + total2);
+                                        subtotal2 = cantidad[i] * 0.60;
+                                        System.out.println("Pepsi--" + cantidad[i] + "x $0.60 = $" + subtotal2);
                                     } else {
 
-                                        System.out.println("Pollo--Disculpa las molestias,producto agotado!");
+                                        System.out.println("Pepsi--Disculpas del caso, producto sin existencias");
 
                                     }
                                 }
                                 if (cod[i] == 3) {
-                                    int Aceite = 60;
-                                    if (cantidad[i] <= Aceite) {
-                                        total3 = cantidad[i] * 3.00;
+                                    int DulcesDiana = 60;
+                                    if (cantidad[i] <= DulcesDiana) {
+                                       subtotal3 = cantidad[i] * 0.30;
 
-                                        System.out.println("Aceite--" + cantidad[i] + "x $3.00 = $" + total3);
+                                        System.out.println("DulcesDiana--" + cantidad[i] + "x $0.30 = $" + subtotal3);
 
                                     } else {
 
-                                        System.out.println("Aceite--Disculpa las molestias,producto agotado!");
+                                        System.out.println("DulcesDiana--Disculpas del caso, producto sin existencias");
                                     }
                                 }
 
                                 if (cod[i] == 4) {
-                                    int Fosforos = 60;
-                                    if (cantidad[i] <= Fosforos) {
-                                        total4 = cantidad[i] * 0.50;
+                                    int Limones = 60;
+                                    if (cantidad[i] <= Limones) {
+                                       subtotal4 = cantidad[i] * 0.50;
 
-                                        System.out.println("Fosforos--" + cantidad[i] + "x $0.50 = $" + total4);
+                                        System.out.println("Limones--" + cantidad[i] + "x $0.50 = $" + subtotal4);
                                     } else {
-                                        System.out.println("Fosforos--Disculpa las molestias,producto agotado!");
+                                        System.out.println("Limones--Disculpas del caso, producto sin existencias");
 
                                     }
                                 }
                                 if (cod[i] == 5) {
-                                    int Dulces = 500;
-                                    if (cantidad[i] <= Dulces) {
-                                        total5 = cantidad[i] * 0.80;
+                                    int Escobas = 500;
+                                    if (cantidad[i] <= Escobas) {
+                                       subtotal5 = cantidad[i] * 2.00;
 
-                                        System.out.println("Dulces--" + cantidad[i] + "x $0.80 = $" + total5);
+                                        System.out.println("Escobas--" + cantidad[i] + "x $2.00 = $" + subtotal5);
 
                                     } else {
-                                        System.out.println("Dulces--Disculpa las molestias,producto agotado!");
+                                        System.out.println("Escobas--Disculpas del caso, producto sin existencias");
                                     }
                                 }
                                 if (cod[i] == 6) {
-                                    int Margarina = 20;
-                                    if (cantidad[i] <= Margarina) {
-                                        total6 = cantidad[i] * 0.30;
+                                    int Desodorante = 20;
+                                    if (cantidad[i] <= Desodorante) {
+                                       subtotal6 = cantidad[i] * 4.50;
 
-                                        System.out.println("Margarina--" + cantidad[i] + "x $0.30 = $" + total6);
+                                        System.out.println("Desodorante--" + cantidad[i] + "x $4.50 = $" + subtotal6);
 
                                     } else {
-                                        System.out.println("Margarina--Disculpa las molestias,producto agotado!");
+                                        System.out.println("Desodorante--Disculpas del caso, producto sin existencias");
                                     }
                                 }
                                 if (cod[i] == 7) {
-                                    int Jabon = 25;
-                                    if (cantidad[i] <= Jabon) {
-                                        total7 = cantidad[i] * 2.25;
+                                    int MangoVerde = 25;
+                                    if (cantidad[i] <= MangoVerde) {
+                                       subtotal7 = cantidad[i] * 0.75;
 
-                                        System.out.println("Jabon--" + cantidad[i] + "x $2.25 = $" + total7);
+                                        System.out.println("MangoVerde--" + cantidad[i] + "x $0.75 = $" + subtotal7);
 
                                     } else {
-                                        System.out.println("Jabon--Disculpa las molestias,producto agotado!");
+                                        System.out.println("MangoVerde--Disculpas del caso, producto sin existencias");
 
                                     }
                                 }
                                 if (cod[i] == 8) {
-                                    int Carne = 30;
-                                    if (cantidad[i] <= Carne) {
-                                        total8 = cantidad[i] * 2.75;
+                                    int Jocotes = 30;
+                                    if (cantidad[i] <= Jocotes) {
+                                       subtotal8 = cantidad[i] * 0.05;
 
-                                        System.out.println("Carne--" + cantidad[i] + "x $2.75 = $" + total8);
+                                        System.out.println("Jocotes--" + cantidad[i] + "x $0.05 = $" + subtotal8);
 
                                     } else {
-                                        System.out.println("Carne--Disculpa las molestias,producto agotado!");
+                                        System.out.println("Jocote--Disculpas del caso, producto sin existencias");
                                     }
                                 }
                                 if (cod[i] == 9) {
-                                    int Gaseosa = 180;
-                                    if (cantidad[i] <= Gaseosa) {
-                                        total9 = cantidad[i] * 1.80;
+                                    int Maruchan = 180;
+                                    if (cantidad[i] <= Maruchan) {
+                                        subtotal9 = cantidad[i] * 1.80;
 
-                                        System.out.println("Gaseosa--" + cantidad[i] + "x $1.80 = $" + total9);
+                                        System.out.println("Maruchan--" + cantidad[i] + "x $1.80 = $" + subtotal9);
                                     } else {
-                                        System.out.println("Gaseosa--Disculpa las molestias,producto agotado!");
+                                        System.out.println("Maruchan--Disculpas del caso, producto sin existencias");
 
                                     }
                                 }
                                 if (cod[i] == 10) {
-                                    int Desechables = 50;
-                                    if (cantidad[i] <= Desechables) {
-                                        total10 = cantidad[i] * 3.25;
+                                    int Cerveza = 50;
+                                    if (cantidad[i] <= Cerveza) {
+                                        subtotal10 = cantidad[i] * 1.00;
 
-                                        System.out.println("Desechables--" + cantidad[i] + "x $3.25 = $" + total10);
+                                        System.out.println("Cerveza--" + cantidad[i] + "x $1.00 = $" +subtotal10);
                                     } else {
-                                        System.out.println("Desechables--Disculpa las molestias,producto agotado!");
+                                        System.out.println("Cerveza--Disculpas del caso, producto sin existencias");
 
                                     }
                                 }
                             }
 
                             double totalproducto;
-                            totalproducto = total1 + total2 + total3 + total4 + total5 + total6 + total7 + total8 + total9 + total10;
+                            totalproducto = subtotal1 + subtotal2 + subtotal3 + subtotal4 + subtotal5 + subtotal6 + subtotal7 + subtotal8 + subtotal9 + subtotal10;
 
                             if (totalproducto > 20) {
                                 totalfinal = totalproducto;
@@ -503,7 +518,7 @@ public class SuperMercadoDigo {
                             }
 
                             System.out.println("------------------------------------");
-                            System.out.println("Total: $" + totalfinal);
+                            System.out.println("Total: $" + totalproducto);
                             System.out.println("Descuento del 3% $" + totaldescuento);
                             System.out.println("Total con descuento :$" + totalproducto);
                             System.out.println("------------------------------------");
@@ -558,10 +573,9 @@ public class SuperMercadoDigo {
 
                 do {
                     System.out.println("Digite la opcion a solicitar");
-                    System.out.println("2. INVENTARIO");
-                    System.out.println("INVENTARIO EN MANTENIMIENTO, NO DISPONIBLE DE MOMENTO\n");//BORRAR ESTO AL METER EL CODIGO
-                     System.out.println("-------------------------------------------------------------------\n");
-                    System.out.println("4. SALIR");
+                    System.out.println("1. INVENTARIO");
+                    System.out.println("-------------------------------------------------------------------\n");
+                    System.out.println("2. SALIR");
                     System.out.println("DIGITE LA OPCION\n");
                     opc2 = in.nextInt();
                     switch (opc2) {

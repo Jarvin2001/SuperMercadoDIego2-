@@ -30,8 +30,7 @@ public class Escribir {
             e.printStackTrace();
         } finally {
             try {
-                // Nuevamente aprovechamos el finally para 
-                // asegurarnos que se cierra el fichero.
+                // Cerramos el fichero 
                 if (null != fichero) {
                     fichero.close();
                 }

@@ -23,8 +23,7 @@ public class Leer {
         
       
         try {
-            // Apertura del fichero y creacion de BufferedReader para poder
-            // hacer una lectura comoda (disponer del metodo readLine()).
+            // Creamos el fichero y creamos el BufferedReader, para leer datos
             String path = (System.getProperty("user.dir"));
 
             archivo = new File(path + rutaabsoluta);
@@ -41,9 +40,7 @@ public class Leer {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            // En el finally cerramos el fichero, para asegurarnos
-            // que se cierra tanto si todo va bien como si salta 
-            // una excepcion.
+            // Cerramos ficheros
             try {
                 if (null != fr) {
                     fr.close();

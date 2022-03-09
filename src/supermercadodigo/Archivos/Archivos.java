@@ -20,6 +20,7 @@ public class Archivos {
     static  String rutaabsoluta = "\\hist\\Bitacora.txt";
     static  String rutaproducto = "\\hist\\Producto.txt";
     static  String rutainventario = "\\hist\\Inventario.txt";
+    
 
     public String[] LeerFichero() {
         File archivo = null;
@@ -28,14 +29,13 @@ public class Archivos {
 
         try {
         
-            // Apertura del fichero y creacion de BufferedReader para poder
-            // hacer una lectura comoda (disponer del metodo readLine()).
+            // Creamos el fichero y creamos el BufferedReader, para leer datos
             String path = (System.getProperty("user.dir"));
 
-            archivo = new File(path + rutaproducto);
+            archivo = new File(path + rutainventario);
             fr = new FileReader(archivo);
             br = new BufferedReader(fr);
-            // Lectura del fichero
+            // Leemos el fichero
             String linea;
             int i = 0;
             while ((linea = br.readLine()) != null) {
@@ -46,9 +46,7 @@ public class Archivos {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            // En el finally cerramos el fichero, para asegurarnos
-            // que se cierra tanto si todo va bien como si salta 
-            // una excepcion.
+            // cerramos el fichero
             try {
                 if (null != fr) {
                     fr.close();
@@ -83,8 +81,7 @@ public class Archivos {
             e.printStackTrace();
         } finally {
             try {
-                // Nuevamente aprovechamos el finally para 
-                // asegurarnos que se cierra el fichero.
+                // Cerramos el fichero
                 if (null != fichero) {
                     fichero.close();
                 }
@@ -102,8 +99,7 @@ public class Archivos {
 
         try {
         
-            // Apertura del fichero y creacion de BufferedReader para poder
-            // hacer una lectura comoda (disponer del metodo readLine()).
+          // Creamos el fichero y creamos el BufferedReader, para leer datos
             String path = (System.getProperty("user.dir"));
 
             archivo = new File(path + rutainventario);
@@ -120,9 +116,7 @@ public class Archivos {
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            // En el finally cerramos el fichero, para asegurarnos
-            // que se cierra tanto si todo va bien como si salta 
-            // una excepcion.
+            // cerramos el fichero
             try {
                 if (null != fr) {
                     fr.close();
@@ -135,10 +129,14 @@ public class Archivos {
     }
 
     public void Leer() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
 
     public void LeerInventario() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet."); 
+    }
+
+    public void LeerProducto() {
+        throw new UnsupportedOperationException("Not supported yet."); 
     }
 }
