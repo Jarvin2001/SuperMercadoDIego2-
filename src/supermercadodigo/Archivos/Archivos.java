@@ -17,9 +17,9 @@ import java.io.PrintWriter;
  */
 public class Archivos {
     static String[] lista = new String[11];
-    static  String rutaabsoluta = "\\hist\\Bitacora.txt";
-    static  String rutaproducto = "\\hist\\Producto.txt";
-    static  String rutainventario = "\\hist\\Inventario.txt";
+    static  String rutaabsoluta = "\\host\\Bitacora.txt";
+    static  String rutaproducto = "\\host\\Producto.txt";
+    static  String rutainventario = "\\host\\Inventario.txt";
     
 
     public String[] LeerFichero() {
