@@ -36,7 +36,7 @@ public class Usuarios {
 
         boolean paso = false;
         if (Admin.equals(us) && ContraseñaA.equalsIgnoreCase(con)) {
-            System.out.println("BIENVENIDO");
+            System.out.println("BIENVENIDO ADMINISTRADOR");
             paso = true;
 
         } else {
@@ -53,7 +53,7 @@ public class Usuarios {
 
         boolean paso2;
         if (Vendedor.equals(us) && ContraseñaV.equalsIgnoreCase(con)) {
-            System.out.println("BIENVENIDO");
+            System.out.println("BIENVENIDO VENDEDOR");
             paso2 = true;
         } else {
             System.out.println("INGRESE DE NUEVO SUS DATOS");
@@ -66,7 +66,7 @@ public class Usuarios {
     public boolean AccesoConcecidoInvitado(String us, String cont) {
         boolean paso3;
         if (Invitado.equals(us) && ContraseñaI.equalsIgnoreCase(cont)) {
-            System.out.println("BIENVENIDO");
+            System.out.println("BIENVENIDO INVITADO");
             paso3 = true;
         } else {
             System.out.println("INGRESE DE NUEVO SUS DATOS");

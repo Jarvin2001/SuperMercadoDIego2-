@@ -27,10 +27,8 @@ public class SuperMercadoDigo {
         Scanner in = new Scanner(System.in);
         //Realizamos el Login para los usuarios
         System.out.println("-----------BIENVENIDO A SUPER MERCADO DIEGO-----------\n");
-         
-        
+
         //Realizamos el menu de acceso    
-    
         System.out.println("-------------------------------------------------------------------");
         System.out.println("-------¿CON QUE NIVEL DE ACCESO QUIERES INGRESAR?------\n");
         System.out.println("1. Administrador: ");
@@ -38,24 +36,23 @@ public class SuperMercadoDigo {
         System.out.println("3. Invitado: ");
         System.out.println("DIGITA EL NUMERO CORRESPONDIENTE AL NIVEL AL QUE QUIERES INGRESAR: \n\n");
         System.out.println("---------------------------------------------------------------------");
-      
-     
 
         nivel = in.nextInt();
 
         //CREANMOS LAS VARIABLES
         Usuarios U = new Usuarios();
         Archivos a = new Archivos();
-        
-                switch (nivel) {
+
+        switch (nivel) {
             case 1:
 
                 do {
-                    System.out.println("BIENVENIDO ADMINISTRADOR");
+                   
                     System.out.println("INGRESE SU USUARIO:  ");
                     usuario = in.next();
                     System.out.println("INGRESE SU CONTRASEÑA:  ");
                     cont = in.next();
+                  
 
                 } while (U.AccesoConcecidoAdministrador(usuario, cont) == false);
                 LocalDateTime localDate = LocalDateTime.now();
@@ -67,15 +64,14 @@ public class SuperMercadoDigo {
                 int mes = localDate.getMonthValue();
                 int anio = localDate.getYear();
 
-                a.EscribirFichero
-        ("\nAdministrador", "\nHora:", hora, minuto, segundo, "\nFecha:", dia, mes, anio);
+                a.EscribirFichero("\nAdministrador", "\nHora:", hora, minuto, segundo, "\nFecha:", dia, mes, anio);
                 boolean salir = false;
 
                 int opc;
-                
-                
+
                 //OPCION ADMINISTRADOR
                 do {
+                   
                     System.out.println("Digite la opcion a solicitar");
                     System.out.println("1. AGREAR NUEVA VENTA");
                     System.out.println("2. INVENTARIO");
@@ -85,8 +81,8 @@ public class SuperMercadoDigo {
                     opc = in.nextInt();
                     switch (opc) {
                         case 1:
-                        //VENTAS  
-                        System.out.println("**Menu para realizar nueva venta**");
+                            //VENTAS  
+                            System.out.println("**Menu para realizar nueva venta**");
                             System.out.println("Ingrese la nueva venta que desea realizar:");
                             System.out.println("-----------------------------------------");
                             a.LeerFichero();
@@ -101,7 +97,7 @@ public class SuperMercadoDigo {
                             double totaldescuento = 0;
                             double totalfinal = 0;
                             double subtotal1 = 0;
-                            double subtotal2= 0;
+                            double subtotal2 = 0;
                             double subtotal3 = 0;
                             double subtotal4 = 0;
                             double subtotal5 = 0;
@@ -135,7 +131,7 @@ public class SuperMercadoDigo {
                                     if (cantidad[i] <= CocaCola) {
 
                                         subtotal1 = cantidad[i] * 0.65;
-                                        System.out.println("CocaCola--" + cantidad[i] + "x $0.65 = $" +subtotal1);
+                                        System.out.println("CocaCola--" + cantidad[i] + "x $0.65 = $" + subtotal1);
 
                                     } else {
 
@@ -160,7 +156,7 @@ public class SuperMercadoDigo {
                                 if (cod[i] == 3) {
                                     int DulcesDiana = 60;
                                     if (cantidad[i] <= DulcesDiana) {
-                                       subtotal3 = cantidad[i] * 0.30;
+                                        subtotal3 = cantidad[i] * 0.30;
 
                                         System.out.println("DulcesDiana--" + cantidad[i] + "x $0.30 = $" + subtotal3);
 
@@ -173,7 +169,7 @@ public class SuperMercadoDigo {
                                 if (cod[i] == 4) {
                                     int Limones = 60;
                                     if (cantidad[i] <= Limones) {
-                                       subtotal4 = cantidad[i] * 0.50;
+                                        subtotal4 = cantidad[i] * 0.50;
 
                                         System.out.println("Limones--" + cantidad[i] + "x $0.50 = $" + subtotal4);
                                     } else {
@@ -184,7 +180,7 @@ public class SuperMercadoDigo {
                                 if (cod[i] == 5) {
                                     int Escobas = 500;
                                     if (cantidad[i] <= Escobas) {
-                                       subtotal5 = cantidad[i] * 2.00;
+                                        subtotal5 = cantidad[i] * 2.00;
 
                                         System.out.println("Escobas--" + cantidad[i] + "x $2.00 = $" + subtotal5);
 
@@ -195,7 +191,7 @@ public class SuperMercadoDigo {
                                 if (cod[i] == 6) {
                                     int Desodorante = 20;
                                     if (cantidad[i] <= Desodorante) {
-                                       subtotal6 = cantidad[i] * 4.50;
+                                        subtotal6 = cantidad[i] * 4.50;
 
                                         System.out.println("Desodorante--" + cantidad[i] + "x $4.50 = $" + subtotal6);
 
@@ -206,7 +202,7 @@ public class SuperMercadoDigo {
                                 if (cod[i] == 7) {
                                     int MangoVerde = 25;
                                     if (cantidad[i] <= MangoVerde) {
-                                       subtotal7 = cantidad[i] * 0.75;
+                                        subtotal7 = cantidad[i] * 0.75;
 
                                         System.out.println("MangoVerde--" + cantidad[i] + "x $0.75 = $" + subtotal7);
 
@@ -218,7 +214,7 @@ public class SuperMercadoDigo {
                                 if (cod[i] == 8) {
                                     int Jocotes = 30;
                                     if (cantidad[i] <= Jocotes) {
-                                       subtotal8 = cantidad[i] * 0.05;
+                                        subtotal8 = cantidad[i] * 0.05;
 
                                         System.out.println("Jocotes--" + cantidad[i] + "x $0.05 = $" + subtotal8);
 
@@ -242,7 +238,7 @@ public class SuperMercadoDigo {
                                     if (cantidad[i] <= Cerveza) {
                                         subtotal10 = cantidad[i] * 1.00;
 
-                                        System.out.println("Cerveza--" + cantidad[i] + "x $1.00 = $" +subtotal10);
+                                        System.out.println("Cerveza--" + cantidad[i] + "x $1.00 = $" + subtotal10);
                                     } else {
                                         System.out.println("Cerveza--Disculpas del caso, producto sin existencias");
 
@@ -268,26 +264,25 @@ public class SuperMercadoDigo {
                             System.out.println("Total con descuento :$" + totalfinal);
                             System.out.println("------------------------------------");
                             break;
-                        
-                        
+
                         case 2:
-                             System.out.println("**Menu para ver la lista de inventarios**");
+                            System.out.println("**Menu para ver la lista de inventarios**");
                             System.out.println("La lista de los inventarios es la siguiente:");
                             System.out.println("-----------------------------------------");
                             a.LeerFichero();
                             System.out.println("-----------------------------------------");
-                        break;
-                        
-                        
-                        case 3:
-                        //CAMBIO DE CONTRASEÑA
-                            System.out.println("**Menu para cambiar contraseña**");
-                            System.out.println("Seleccione su nueva contraseña:");
-                            usuario = in.next();
-                            System.out.println("Escriba nuevamente su contraseña nueva:\n\n");
-                            cont = in.next();
                             break;
-                    
+
+                        case 3:
+                            //CAMBIO DE CONTRASEÑA
+                            System.out.println("**Menu para cambiar contraseña**");
+                            System.out.println("INGRESE SU ANTIGUA CONTRASEÑA:");
+                            usuario = in.next();
+                            System.out.println("INGRESE SU NUEVA CONTRASEÑA:\n");
+                            cont = in.next();
+                            System.out.println("CONTRASEÑA CAMBIADA CON EXITO:\n\n");
+                            break;
+
                         case 4:
                             System.out.println("Saliendo del programa");
                             a.EscribirFichero("\nSalida del Administrador", "\nHora:", hora, minuto, segundo, "\nFecha:", dia, mes, anio);
@@ -300,26 +295,14 @@ public class SuperMercadoDigo {
                 } while (opc != 4);
                 break;
 
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
             //OPCION VENDEDOR
             case 2:
                 do {
                     System.out.println("BIENVENIDO VENDEDOR BRYAN");
                     System.out.println("INGRESE SU USUARIO:  ");
                     usuario = in.next();
-                    System.out.println("INGRESE SU CONTRASEÑA:  "+"\n");
-                   
+                    System.out.println("INGRESE SU CONTRASEÑA:  " + "\n");
+
                     cont = in.next();
                 } while (U.AccesoConcedidoVendedor(usuario, cont) == false);
 
@@ -359,7 +342,7 @@ public class SuperMercadoDigo {
                             double totaldescuento = 0;
                             double totalfinal = 0;
                             double subtotal1 = 0;
-                            double subtotal2= 0;
+                            double subtotal2 = 0;
                             double subtotal3 = 0;
                             double subtotal4 = 0;
                             double subtotal5 = 0;
@@ -393,7 +376,7 @@ public class SuperMercadoDigo {
                                     if (cantidad[i] <= CocaCola) {
 
                                         subtotal1 = cantidad[i] * 0.65;
-                                        System.out.println("CocaCola--" + cantidad[i] + "x $0.65 = $" +subtotal1);
+                                        System.out.println("CocaCola--" + cantidad[i] + "x $0.65 = $" + subtotal1);
 
                                     } else {
 
@@ -418,7 +401,7 @@ public class SuperMercadoDigo {
                                 if (cod[i] == 3) {
                                     int DulcesDiana = 60;
                                     if (cantidad[i] <= DulcesDiana) {
-                                       subtotal3 = cantidad[i] * 0.30;
+                                        subtotal3 = cantidad[i] * 0.30;
 
                                         System.out.println("DulcesDiana--" + cantidad[i] + "x $0.30 = $" + subtotal3);
 
@@ -431,7 +414,7 @@ public class SuperMercadoDigo {
                                 if (cod[i] == 4) {
                                     int Limones = 60;
                                     if (cantidad[i] <= Limones) {
-                                       subtotal4 = cantidad[i] * 0.50;
+                                        subtotal4 = cantidad[i] * 0.50;
 
                                         System.out.println("Limones--" + cantidad[i] + "x $0.50 = $" + subtotal4);
                                     } else {
@@ -442,7 +425,7 @@ public class SuperMercadoDigo {
                                 if (cod[i] == 5) {
                                     int Escobas = 500;
                                     if (cantidad[i] <= Escobas) {
-                                       subtotal5 = cantidad[i] * 2.00;
+                                        subtotal5 = cantidad[i] * 2.00;
 
                                         System.out.println("Escobas--" + cantidad[i] + "x $2.00 = $" + subtotal5);
 
@@ -453,7 +436,7 @@ public class SuperMercadoDigo {
                                 if (cod[i] == 6) {
                                     int Desodorante = 20;
                                     if (cantidad[i] <= Desodorante) {
-                                       subtotal6 = cantidad[i] * 4.50;
+                                        subtotal6 = cantidad[i] * 4.50;
 
                                         System.out.println("Desodorante--" + cantidad[i] + "x $4.50 = $" + subtotal6);
 
@@ -464,7 +447,7 @@ public class SuperMercadoDigo {
                                 if (cod[i] == 7) {
                                     int MangoVerde = 25;
                                     if (cantidad[i] <= MangoVerde) {
-                                       subtotal7 = cantidad[i] * 0.75;
+                                        subtotal7 = cantidad[i] * 0.75;
 
                                         System.out.println("MangoVerde--" + cantidad[i] + "x $0.75 = $" + subtotal7);
 
@@ -476,7 +459,7 @@ public class SuperMercadoDigo {
                                 if (cod[i] == 8) {
                                     int Jocotes = 30;
                                     if (cantidad[i] <= Jocotes) {
-                                       subtotal8 = cantidad[i] * 0.05;
+                                        subtotal8 = cantidad[i] * 0.05;
 
                                         System.out.println("Jocotes--" + cantidad[i] + "x $0.05 = $" + subtotal8);
 
@@ -500,7 +483,7 @@ public class SuperMercadoDigo {
                                     if (cantidad[i] <= Cerveza) {
                                         subtotal10 = cantidad[i] * 1.00;
 
-                                        System.out.println("Cerveza--" + cantidad[i] + "x $1.00 = $" +subtotal10);
+                                        System.out.println("Cerveza--" + cantidad[i] + "x $1.00 = $" + subtotal10);
                                     } else {
                                         System.out.println("Cerveza--Disculpas del caso, producto sin existencias");
 
@@ -512,7 +495,7 @@ public class SuperMercadoDigo {
                             totalproducto = subtotal1 + subtotal2 + subtotal3 + subtotal4 + subtotal5 + subtotal6 + subtotal7 + subtotal8 + subtotal9 + subtotal10;
 
                             if (totalproducto > 20) {
-                                 totalfinal = totalproducto;
+                                totalfinal = totalproducto;
 
                                 totaldescuento = totalproducto * descuento;
 
@@ -529,13 +512,13 @@ public class SuperMercadoDigo {
 
                         //INVENTARIOS
                         case 2:
-                             System.out.println("**Menu para ver la lista de inventarios**");
+                            System.out.println("**Menu para ver la lista de inventarios**");
                             System.out.println("La lista de los inventarios es la siguiente:");
                             System.out.println("-----------------------------------------");
                             a.LeerProductos();
                             System.out.println("-----------------------------------------");
                             break;
-                         
+
                         case 3:
                             System.out.println("Saliendo del programa");
                             salir = true;
@@ -577,17 +560,26 @@ public class SuperMercadoDigo {
                 do {
                     System.out.println("Digite la opcion a solicitar");
                     System.out.println("1. INVENTARIO");
-                    System.out.println("-------------------------------------------------------------------\n");
                     System.out.println("2. SALIR");
                     System.out.println("DIGITE LA OPCION\n");
                     opc2 = in.nextInt();
                     switch (opc2) {
                         case 1:
                             System.out.println("LISTA DE INVENTARIOS");
-                             System.out.println("**Menu para ver la lista de inventarios**");
+                            System.out.println("**Menu para ver la lista de inventarios**");
                             System.out.println("La lista de los inventarios es la siguiente:");
                             System.out.println("-----------------------------------------");
-                            a.LeerFichero();
+                            System.out.println("PRODUCTO: CANTIDAD : UNIDADES\n"
+                                    + "1- Coca Cola       	$0.65c/u			\n"
+                                    + "2- Pepsi            	$0.60c/u\n"
+                                    + "3- Dulces Diana   	$0.30c/u\n"
+                                    + "4- Limones       	$0.50c/u\n"
+                                    + "5- Escobas       	$2.00c/u\n"
+                                    + "6- Desodorante    	$4.50c/u\n"
+                                    + "7- Mango Verde    	$0.75c/u\n"
+                                    + "8- Jocotes       	$0.05c/u\n"
+                                    + "9- Maruchan       	$1.80c/u	\n"
+                                    + "10- Cerveza              $1.00c/u");
                             System.out.println("-----------------------------------------");
                             break;
                         case 2:
@@ -598,11 +590,11 @@ public class SuperMercadoDigo {
                     }
                 } while (opc2 != 2);
                 break;
-                
+
             default:
                 System.out.println("INDIQUE UN VALOR VALIDO");
-             
-            break;      
+
+                break;
         }
-      }   
     }
+}

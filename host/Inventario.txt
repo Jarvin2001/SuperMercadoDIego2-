@@ -1,11 +1,11 @@
 PRODUCTO: CANTIDAD : UNIDADES
-1- Coca Cola       30				
-2- Pepsi           5  	
-3- Dulces Diana    60	
-4- Limones        100	
-5- Escobas        500	
-6- Desodorante     20	
-7- Mango Verde      25	
-8- Jocotes         30	
-9- Maruchan       180		
-10- Cerveza        50
+1- Coca Cola       30	$0.65c/u			
+2- Pepsi            5  	$0.60c/u
+3- Dulces Diana    60	$0.30c/u
+4- Limones        100	$0.50c/u
+5- Escobas        500	$2.00c/u
+6- Desodorante     20	$4.50c/u
+7- Mango Verde     25	$0.75c/u
+8- Jocotes         30	$0.05c/u
+9- Maruchan       180	$1.80c/u	
+10- Cerveza        50   $1.00c/u
