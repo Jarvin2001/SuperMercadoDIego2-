@@ -15,7 +15,7 @@ import java.io.FileReader;
  */
 public class Leer {
     static  String[] listadeproductos = new String[10];
-    static  String rutaabsoluta = "\\hist\\Inventario.txt";
+    static  String rutaabsoluta = "\\host\\Inventario.txt";
     public static void main(String[] arg) {
         File archivo = null;
         FileReader fr = null;

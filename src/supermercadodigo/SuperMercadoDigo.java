@@ -30,21 +30,24 @@ public class SuperMercadoDigo {
          
         
         //Realizamos el menu de acceso    
-         System.out.println("-------------------------------------------------------------------");
+    
+        System.out.println("-------------------------------------------------------------------");
         System.out.println("-------¿CON QUE NIVEL DE ACCESO QUIERES INGRESAR?------\n");
         System.out.println("1. Administrador: ");
         System.out.println("2. Vendedor: ");
         System.out.println("3. Invitado: ");
         System.out.println("DIGITA EL NUMERO CORRESPONDIENTE AL NIVEL AL QUE QUIERES INGRESAR: \n\n");
         System.out.println("---------------------------------------------------------------------");
+      
+     
 
         nivel = in.nextInt();
 
         //CREANMOS LAS VARIABLES
         Usuarios U = new Usuarios();
         Archivos a = new Archivos();
-
-        switch (nivel) {
+        
+                switch (nivel) {
             case 1:
 
                 do {
@@ -110,12 +113,12 @@ public class SuperMercadoDigo {
 
                             do {
 
-                                System.out.println("Digite codigo del producto a adquirir");
+                                System.out.println("DIGITE EL CODIGO DEL PRODUCTO");
                                 cod[c] = in.nextInt();
-                                System.out.println("Digite la cantidad de productos a adquirir");
+                                System.out.println("DIGITE LA CANTIDAD DE PRODUCTOS ");
                                 cantidad[c] = in.nextInt();
                                 c++;
-                                System.out.println("Desea agregar mas productos(Presionar 1 y si no 0");
+                                System.out.println("¿DESEA SEGUIR? SI=1, NO=0");
 
                                 compra = in.nextInt();
 
@@ -255,14 +258,14 @@ public class SuperMercadoDigo {
 
                                 totaldescuento = totalproducto * descuento;
 
-                                totalproducto = totalproducto - totaldescuento;
+                                totalfinal = totalproducto - totaldescuento;
 
                             }
 
                             System.out.println("------------------------------------");
                             System.out.println("Total: $" + totalproducto);
                             System.out.println("Descuento del 3% $" + totaldescuento);
-                            System.out.println("Total con descuento :$" + totalproducto);
+                            System.out.println("Total con descuento :$" + totalfinal);
                             System.out.println("------------------------------------");
                             break;
                         
@@ -509,18 +512,18 @@ public class SuperMercadoDigo {
                             totalproducto = subtotal1 + subtotal2 + subtotal3 + subtotal4 + subtotal5 + subtotal6 + subtotal7 + subtotal8 + subtotal9 + subtotal10;
 
                             if (totalproducto > 20) {
-                                totalfinal = totalproducto;
+                                 totalfinal = totalproducto;
 
                                 totaldescuento = totalproducto * descuento;
 
-                                totalproducto = totalproducto - totaldescuento;
+                                totalfinal = totalproducto - totaldescuento;
 
                             }
 
                             System.out.println("------------------------------------");
                             System.out.println("Total: $" + totalproducto);
                             System.out.println("Descuento del 3% $" + totaldescuento);
-                            System.out.println("Total con descuento :$" + totalproducto);
+                            System.out.println("Total con descuento :$" + totalfinal);
                             System.out.println("------------------------------------");
                             break;
 
@@ -595,6 +598,11 @@ public class SuperMercadoDigo {
                     }
                 } while (opc2 != 2);
                 break;
+                
+            default:
+                System.out.println("INDIQUE UN VALOR VALIDO");
+             
+            break;      
         }
+      }   
     }
-}
